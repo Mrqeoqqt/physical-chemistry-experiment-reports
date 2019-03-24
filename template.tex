@@ -11,174 +11,46 @@
 \usepackage{geometry}
 \usepackage{float}
 \geometry{left=2.5cm,right=2.5cm,bottom=2.5cm,top=2.5cm}
-\title{物理化学实验17：BZ振荡反应}
+\title{物理化学实验: XXX}
 \author{薛明怡\quad 151250177\quad 化学化工学院}
 \date{\today}
 \begin{document}
 \maketitle
 %%\tableofcontents
-\bibliographystyle{unsrt}
+%%\bibliographystyle{unsrt}
 \section{实验目的}
 \begin{enumerate}
-\item 了解自然界中存在的非平衡非线性现象.
-\item 掌握求Belousov-Zhabotinsli反应(BZ振荡反应)活化能的实验方法.
-\item 通过``翻转课堂''的实施, 培养自主创新意识.
+\item YYY
 \end{enumerate}
 \section{实验原理}
-\subsection{非平衡态热力学}
-经典热力学三大定律:(适用条件: 封闭系统, 平衡态, 不做非体积功)
-\begin{enumerate}
-	\item \textbf{第一定律} $\Delta U=Q+W$
-	\item \textbf{第二定律} $dS\ge \frac{\delta Q}{T}$
-	\item \textbf{第三定律} $\lim_{T \to 0}S=0$ (完美晶体)
-\end{enumerate}	
-\par
-根据热力学第二定律, 在孤立体系中, 
-自发变化的方向由有序到无序, 混乱度增加,趋向于平衡态. 
-而自然界中广泛存在的有序形貌促进了20世纪50年代非平衡热力学研究的发展.
-
-\subsection{耗散结构}
-热力学系统可以分为三类, 热力学三大定律适用的平衡态系统, 
-局域平衡假设适用的近平衡态系统(线性非平衡态), 
-以及远平衡态系统(非线性非平衡态系统).\par
-耗散结构是指非线性非平衡态系统由于本身的非线性动力学机制
-而有可能产生宏观时空有序的结构.\par
-本实验研究的BZ振荡反应是一种典型的耗散结构.
-\subsection{BZ振荡}
-由溴酸盐, 有机物在酸性介质中, 在有(或无)金属离子催化剂催化下, 
-某些中间组分的浓度发生\textbf{周期性变化}, 溶液颜色出现交替变化的现象, 即发生化学振荡.
-化学振荡反应的必要条件之一是该反应必须是自催化反应. 化学振荡现象的发生必须满足如下几个条件:
-\begin{enumerate}
-    \item 反应必须是敞开体系且远离平衡态, 即$\Delta_{r} G_{m}$为较负的值.
-    \item 反应历程中应包含自催化的步骤.
-    \item 体系中必须能有两个准定态(稳态)存在.
-\end{enumerate}
-\subsection{自催化反应}
-在给定条件下的反应体系, 反应开始后逐渐形成并积累了某种产物或中间体, 这些产物具有催化功能, 
-使反应经过一段诱导期后出现大大加速的现象, 这种作用称为自（动）催化作用. 其特征之一是存在着初始的诱导期. 
-大多数自动氧化过程都存在自催化作用. 油脂腐败, 橡胶变质以及塑料制品的老化均属于包含链反应的自动氧化过程, 
-反应开始进行很慢, 但都被其所产生的自由基所加速.
-\textbf{马洛卡模型}
-$1$分子A自身分解产生$1$分子B和$1$分子C, 其中B可以迅速与A结合生成络合物AB, 该络合物又继续分解, 
-生成$2$分子B和$1$分子C. 生成物B参与第二步反应和第三步反应, 充当了反应的催化剂, 
-因此该反应被成为自催化反应. 反应历程如下:
-\begin{equation}
-	\begin{aligned}
-		&A \stackrel{k_{1}}{\longrightarrow} B + C\\
-		&A + B \stackrel{k_{2}}{\longrightarrow} AB\\
-		&AB \stackrel{k_{3}}{\longrightarrow} B + C\\
-	\end{aligned}
-\end{equation}
-\par
-在常规反应中, 反应速率与反应物浓度相关:
-\begin{equation}
-r \propto [A]^{n}\\
-\end{equation}
-\par
-因此, 随着反应的进行, 反应物浓度降低, 反应速率减缓.\par
-而在自催化反应中, 一开始反应历程遵循上述表达式, 但随着反应的进行, 
-反应历程发生变化, 虽然反应物浓度降低, 
-但是自催化剂浓度增加对反应速率的贡献超过了反应物浓度降低对反应速率的减缓效应.\\
-\begin{equation}
-r \propto [A]^{x}[B]^{y}\\
-\end{equation}
-\subsection{FKN机理}
-以本实验为例, 原料溴酸钾, 丙二酸, 硝酸铈铵, 硫酸反应生成溴离子,
-次溴酸, 亚溴酸, 二氧化溴, 丙二溴酸, 单质溴等中间产物, 
-涉及二十几个基元反应.\par
-主要基元反应可以被分为三组,
-\begin{enumerate}
-	\item \textbf{A过程}
-	\begin{enumerate}
-		\item $BrO_{3}^{-} + Br^{-} + H^{+} \to HBrO_{2} + HOBr$ (控速步)
-		\item $HBrO_{2} + Br^{-} + H^{+} \to 2HOBr$
-		\item $HOBr + Br^{-} + H^{+} \to Br_{2} + H_{2}O$
-		\item $Br_{2} + CH_{2}(COOH)_{2} 
-				\to BrCH(COOH)_{2} + H^{+} + Br^{-}$
-	\end{enumerate}
-	\item \textbf{B过程}
-	\begin{enumerate}
-		\item $HBrO_{2} + BrO_{3}^{-} + H^{+}
-				\to 2BrO_{2} + H_{2}O$
-		\item $BrO_{2} + Ce^{3+} + H^{+}
-				\to HBrO_{2} + Ce^{4+}$
-		\item $2HBrO_{2}
-				\to BrO_{3}^{-} + HOBr + H^{+}$
-	\end{enumerate}
-	\item \textbf{关联反应}
-	\begin{enumerate}
-		\item $4Ce^{4+} + BrCH(COOH)_{2} + H_{2}O + HOBr 
-				\to 2Br^{-} + 4Ce^{3+} + 3CO_{2} + 6H^{+}$
-	\end{enumerate}
-	\item \textbf{总反应}
-	\begin{enumerate}
-		\item $2H^{+} + BrO_{3}^{-} + 2CH_{2}(COOH)_{2} 
-				\to 2BrCH(COOH)_{2} + 3CO_{2} + 4H_{2}O$
-	\end{enumerate}
-\end{enumerate}
-\par
-当溴离子的浓度低于临界浓度时主要发生A过程, 
-低于临界浓度时主要发生B过程. 其中临界浓度由反应式$A_{b}$和$B_{a}$平衡推导出, \\
-
-\begin{equation}
-	\begin{aligned}
-			&[Br^{-}] = \frac{k_{B_a}}{k_{A_b}}[BrO_{3}^{-}]\\
-					&= 5\times 10^{-6} [BrO_{3}^{-}]\\
-	\end{aligned}
-\end{equation}
-
-\subsection{检测手段}
-在本实验中通过测量电势和观察颜色, 形成对耗散结构的时空有序性的一定认知.
-\subsection{诱导期}
-BZ振荡反应中诱导期与反应速率常数成反比, 测量一系列不同温度下的诱导期, 
-再利用阿伦尼乌斯公式, 可以求出反应的活化能.\\
-\begin{equation}
-	\begin{aligned}
-		\frac{1}{t} &\propto k\\
-		\ln{\frac{1}{t}} &= \ln{A} - (\frac{E_{a}}{R})\times \frac{1}{T}\\
-	\end{aligned}
-\end{equation}
-\subsection{同心圆实验}
-观察BZ振荡随空间的有序变化. 
-\subsection{自主探索}
-\begin{enumerate}
-	\item 反应物浓度变化的影响
-	\item 原料添加顺序的影响
-	\item 恒温时间长短的影响
-	\item 搅拌速率的影响
-\end{enumerate}
+\subsection{ZZZ}
 \section{仪器与药品}
 \begin{enumerate}
-    \item \textbf{仪器:} 低温恒温槽, 带夹套恒温反应釜, 铂电极, 甘汞电极(以硫酸为液接),
-		磁力搅拌机, 5mL移液枪, 数据采集接口装置, 电脑; 4只小烧杯, 5mL量筒, 2支玻棒, 1套培养皿, 洗耳球, 试管夹
-    \item \textbf{药品:} 0.004mol/L硝酸铈铵溶液, 0.25mol/L溴酸钾溶液, 0.45mol/L丙二酸溶液, 3mol/L硫酸溶液
+    \item \textbf{仪器:} XXX
+    \item \textbf{药品:} XXX
 \end{enumerate}
 \section{实验步骤}
 \subsection{实验准备}
-洗净培养皿, 漏斗, 烧杯, 置于$100^\circ$C烘箱中干燥.
-\subsection{测量电势随时间变化}
-将恒温槽设为$30^\circ$C.\par
-取1支硫酸电极, 将1mol/L硫酸溶液从支管口加入电极, 用洗瓶将电极外壁擦干净, 
-硫酸电极接入数据采集口负极, Pt电极接入正极. 清洗电极底部和反应釜, 用铝制擦干. 
-洗涤并擦干搅拌子, 放入反应釜中.\par
-用移液枪分别移取5mL溴酸钾, 丙二酸和硫酸溶液到反应釜中, 将反应釜和电极盖拼装好, 
-置于磁力搅拌机上, 调节转速为400r/min.\par
-洗涤5mL量筒, 并用少量硝酸铈铵溶液润洗. 用移液枪移取5mL硝酸铈铵溶液到量筒中, 
-用试管夹将量筒固定到恒温槽中恒温, 开始计时.\par
-在软件中设置X轴范围为$[0, 600]s$, Y轴范围为$[300, 1200]mV$. 点击开始, 观察基线电势. \par
-取出$30^\circ$C的硝酸铈铵溶液, 从漏斗口导入反应釜, 此时将出现电势突跃. 
-用洗耳球将漏斗中残余的反应液吹入反应釜. 经过一段时间后, 电势下降, 
-待出现3个完整的波形后可停止程序并保存数据.\par
-重复上述步骤, 测量$35^\circ$C, $40^\circ$C, $45^\circ$C, $50^\circ$C下的数据.
-\subsection{同心圆实验}
-分别在三个烘干的小烧杯a(较大), b, c中称取约0.5g溴酸钾, 0.5g溴化钾, 0.lg丙二酸.\par
-向烧杯b和c中加入1mL去离子水, 搅拌使固体溶解.\par
-向烧杯a中加入5mL去离子水, 1mL 3mol/L的硫酸溶液, 以较大的培养皿为水浴缸, 倒入开水, 
-放入小烧杯a, 搅拌溶解.\par
-将烧杯转入通风处中, 将b和c中溶液倒入烧杯a, 待溶液褪色后, 加入约1mL亚铁灵溶液, 搅拌并观察颜色变化.\par
-将溶液倒进小培养皿并轻轻晃动铺开, 将大培养皿中的水倒尽擦干, 盖在小培养皿上, 观察颜色变化.
+XXX
+\subsection{YYY}
 \subsection{收尾}
 清洗整理仪器.
+\section{拓展实验}
+
+\newpage
+\section{数据处理}
+
+\newpage
+\section{思考题}
+\begin{enumerate}
+	\item 自催化发生在哪一个过程? 自催化剂是何种物质?
+	\item 如何理解本实验为开放系统? 并且远离平衡态?
+	\item 两个稳态是哪两个状态?
+	\item 实验现象的观察和解释.
+	\item 电极上发生的反应?
+	\item 同心圆的形成机制?
+\end{enumerate}
+\newpage
 \section{原始数据记录}
 \begin{table}[H]
 	\begin{center}
@@ -199,17 +71,5 @@ BZ振荡反应中诱导期与反应速率常数成反比, 测量一系列不同�
 		 \end{tabular}
 	\end{center}
 \end{table}
-\section{数据处理}
-
-\section{思考题}
-\begin{enumerate}
-	\item 自催化发生在哪一个过程? 自催化剂是何种物质?
-	\item 如何理解本实验为开放系统? 并且远离平衡态?
-	\item 两个稳态是哪两个状态?
-	\item 实验现象的观察和解释.
-	\item 电极上发生的反应?
-	\item 同心圆的形成机制?
-\end{enumerate}
-
-\bibliography{ref}
+%%\bibliography{ref}
 \end{document}

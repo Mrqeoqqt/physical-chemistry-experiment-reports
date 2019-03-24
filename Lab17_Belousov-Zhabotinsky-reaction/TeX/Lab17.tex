@@ -9,6 +9,7 @@
 \usepackage[european]{circuitikz}
 \usepackage{multirow}
 \usepackage{geometry}
+\usepackage{cite}
 \geometry{left=2.5cm,right=2.5cm,bottom=2.5cm,top=2.5cm}
 \title{物理化学实验17：BZ振荡反应}
 \author{薛明怡\quad 151250177\quad 化学化工学院}
@@ -16,7 +17,7 @@
 \begin{document}
 \maketitle
 %%\tableofcontents
-%%\bibliographystyle{unsrt}
+\bibliographystyle{unsrt}
 \section{实验目的}
 \begin{enumerate}
 \item 了解自然界中存在的非平衡非线性现象.
@@ -87,7 +88,7 @@ r \propto [A]^{x}[B]^{y}\\
 	\caption{反应机理}\label{wf}
 \end{figure}
 \subsection{FKN机理}
-以本实验为例, 原料溴酸钾, 丙二酸, 硫酸铈铵, 硫酸反应生成溴离子,
+以本实验为例, 原料溴酸钾, 丙二酸, 硫酸铈铵, 硫酸, 反应生成溴离子,
 次溴酸, 亚溴酸, 二氧化溴, 丙二酸溴, 单质溴等中间产物, 
 涉及二十几个基元反应.\par
 主要基元反应可以被分为三组,
@@ -113,6 +114,8 @@ r \propto [A]^{x}[B]^{y}\\
 	\begin{enumerate}
 		\item $4Ce^{4+} + BrCH(COOH)_{2} + H_{2}O + HOBr 
 				\to 2Br^{-} + 4Ce^{3+} + 3CO_{2} + 6H^{+}$
+		\item $2H^{+} + 2BrO_{3}^{-} + 3CH_{2}(COOH)_{2} 
+				\to 2BrCH(COOH)_{2} + 3CO_{2} + 4H_{2}O$
 	\end{enumerate}
 	\item \textbf{总反应}
 	\begin{enumerate}
@@ -123,11 +126,10 @@ r \propto [A]^{x}[B]^{y}\\
 \par
 当溴离子的浓度低于临界浓度时主要发生A过程, 
 低于临界浓度时主要发生B过程. 其中临界浓度由反应式$A_{b}$和$B_{a}$平衡推导出, \\
-
 \begin{equation}
 	\begin{aligned}
-			&[Br^{-}] = \frac{k_{B_a}}{k_{A_b}}[BrO_{3}^{-}]\\
-					&= 5\times 10^{-6} [BrO_{3}^{-}]\\
+			&[Br^{-}]_{crit} = \frac{k_{B_a}}{k_{A_b}}[BrO_{3}^{-}]\\
+			&= 5\times 10^{-6} [BrO_{3}^{-}]\\
 	\end{aligned}
 \end{equation}
 
@@ -178,19 +180,19 @@ BZ振荡反应中诱导期与反应速率常数成反比, 测量一系列不同�
 \subsection{测量电势随时间变化}
 将恒温槽设为$30^\circ$C.\par
 取1支硫酸电极, 将1mol/L硫酸溶液从支管口加入电极, 用洗瓶将电极外壁擦干净, 
-硫酸电极接入数据采集口负极, Pt电极接入正极. 清洗电极底部和反应釜, 用铝制擦干. 
+硫酸电极接入数据采集口负极, Pt电极接入正极. 清洗电极底部和反应釜, 用滤纸擦干. 
 洗涤并擦干搅拌子, 放入反应釜中.\par
 用移液枪分别移取5mL溴酸钾, 丙二酸和硫酸溶液到反应釜中, 将反应釜和电极盖拼装好, 
 置于磁力搅拌机上, 调节转速为400r/min.\par
 洗涤5mL量筒, 并用少量硫酸铈铵溶液润洗. 用移液枪移取5mL硫酸铈铵溶液到量筒中, 
-用试管夹将量筒固定到恒温槽中恒温, 开始计时.\par
+用试管夹将量筒固定到恒温槽中恒温, 开始计时恒温5min.\par
 在软件中设置X轴范围为$[0, 600]s$, Y轴范围为$[300, 1200]mV$. 点击开始, 观察基线电势. \par
 取出$30^\circ$C的硫酸铈铵溶液, 从漏斗口导入反应釜, 此时将出现电势突跃. 
 用洗耳球将漏斗中残余的反应液吹入反应釜. 经过一段时间后, 电势下降, 
 待出现3个完整的波形后可停止程序并保存数据.\par
 重复上述步骤, 测量$35^\circ$C, $40^\circ$C, $45^\circ$C, $50^\circ$C下的数据.
 \subsection{同心圆实验}
-分别在三个烘干的小烧杯a(较大), b, c中称取约0.5g溴酸钾, 0.5g溴化钾, 0.lg丙二酸.\par
+分别在三个烘干的小烧杯a(较大), b, c中称取约0.5g溴酸钾, 0.05g溴化钾, 0.lg丙二酸.\par
 向烧杯b和c中加入1mL去离子水, 搅拌使固体溶解.\par
 向烧杯a中加入5mL去离子水, 1mL 3mol/L的硫酸溶液, 以较大的培养皿为水浴缸, 倒入开水, 
 放入小烧杯a, 搅拌溶解.\par
@@ -199,23 +201,111 @@ BZ振荡反应中诱导期与反应速率常数成反比, 测量一系列不同�
 \subsection{收尾}
 清洗整理仪器.
 \section{拓展实验}
-
-\newpage
+1. 停止磁子搅拌后的电势变化\par
+2. 将稀释10倍的亚铁灵溶液代替硫酸铈铵溶液作为催化剂\par
+3. 取$2.5mL$硫酸溶液稀释到$5mL$观察反应电势\par
+反应定性结论及现象详见讨论部分和误差分析.
 \section{数据处理}
-
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.50\paperwidth]{fig/experiment.png}\\
+	\caption{时间$\ln(\frac{1}{t})$对温度$\frac{1}{T}$作图}
+\end{figure}
+\par
+用一次函数$Y = k\times X + b$按最小二乘法优化拟合参数如下,
+\begin{equation}
+	\begin{aligned}
+		\ln A &= b = 14.50\\
+		-\frac{E_{a}}{R} &= k = -6.092\times 10^{3}\\
+		R^{2} &= \frac{SSR}{SST} = \frac{\sum{(\hat{y_{i}}-\bar{y})^{2}}}{\sum{(y_{i}-\bar{y})^{2}}}\\
+					&=0.9904\\
+	\end{aligned}
+\end{equation}
+\par
+因此,
+\begin{equation}
+	\begin{aligned}
+		Ea &= -R\times k\\
+			 &= -8.314 \times (-6.092 \times 10^{3})\\
+			 &= 50.65 kJ/mol\\
+	\end{aligned}
+\end{equation}
 \newpage
 \section{思考与讨论}
 \begin{enumerate}
-	\item 自催化发生在哪一个过程? 自催化剂是何种物质?
-	\item 如何理解本实验为开放系统? 并且远离平衡态?
-	\item 两个稳态是哪两个状态?
-	\item 实验现象的观察和解释.
-	\item 电极上发生的反应?
-	\item 同心圆的形成机制?
-\end{enumerate}
+	\item 本实验记录的电动势主要代表什么？与能斯特方程求得的电势有什么不同？\\
+	本实验记录的电势代表振荡过程的系统的综合电势,
+	主要反映了反应过程中离子的浓度随着反应进程的变化, 
+	是非平衡态的电势, 而Nernst方程求得的电位是平衡时的电势.
+	\item 影响诱导期, 振荡周期, 振荡寿命的主要因素.
+	\begin{itemize}
+		\item 温度: 温度越高, 诱导期越短, 振荡周期越短.
+		\item 催化剂: 催化离子可以影响反应速率.
+		\item 溶液浓度: 根据速率方程, 溶液浓度越高, 反应速率越快.
+		\item 溶液酸碱度: $H^{+}$浓度决定了两个稳态之间的距离. 
+	\end{itemize}
+	\item 自催化发生在哪一个过程? 自催化剂是何种物质?\\
+	自催化剂为$Br^{-}$, 发生在A过程.
+	\item 如何理解本实验为开放系统? 并且远离平衡态?\\
+	系统与外部环境进行了物质和能量的交换, 
+	并且采用了适当的有序结构来耗散环境传来的物质和能量.
+	\item 两个稳态是哪两个状态?\\
+	A过程与B过程时两个稳态, A过程中消耗$Br^{-}$, B过程中产生$Br^{-}$, 
+	当$Br^{-}$浓度超过$Br^{-}_{crit}$时A过程占主导,
+	否则B过程主导, 因此在两个状态间循环往复.
+	\item 实验现象的观察和解释.\\
+	在电势测量过程中, 体系中溶液颜色会产生黄色和无色的交替变化,
+	电势高时为黄色, 电势低时为无色. 
+	\item 同心圆的形成机制?\\
+	BZ振荡反应的电势测定反映的是耗散体系在时间上的有序性,
+	而同心圆实验反映的是耗散体系在空间上的有序性. 在
+	$NaBr -- NaBrO_{3} -- H_{2}SO_{4}$系统中加入丙二酸和亚铁灵
+	试剂, 假设体系有两个稳态A和B, 在静置条件下, 体系的某一点
+	$Br^{-}$浓度大于临界值, 从而与周围的溶剂反应被消耗掉, 
+	从而在这一点的溴离子浓度降低, 周围的离子浓度升高, 圆环向外扩展,
+	形成红蓝相间的同心圆花纹. 以下两张图分别为反应开始和反应终了时的现象.
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=0.30\paperwidth]{fig/circle1.jpg}\\
+		\caption{同心圆实验1}
+	\end{figure}
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=0.30\paperwidth]{fig/circle2.jpg}\\
+		\caption{同心圆实验2}
+	\end{figure}
+	\item 拓展实验: 测量过程中电极上会产生气泡, 在静置磁子的拓展实验中,
+	实验结束时可以看到磁子上有明显的气泡. 振荡周期和振幅呈现不规则变化.
+	\item 拓展实验: 亚铁灵试剂的催化作用明显强于硫酸铈铵溶液, 因此在电势测量过程中可以
+	观察到在亚铁灵试剂催化下, 电势呈现振荡走低, 说明反应向一个稳态倾斜. 
+	体系颜色在蓝色和紫色间周期性变化, 电势高时为蓝色, 
+	电势低时为紫色. 
 
+
+\end{enumerate}
+\section{误差分析}
+\begin{enumerate}
+	\item 实验数据拟合结果中$R^{2}$极接近1, 
+	因此由一次操作造成的偶然误差可以忽略. 
+	\item 计算出的诱导期表观活化能为$50.65 kJ/mol$,
+	\item 恒温时间过长会导致丙二酸等溶剂挥发, 导致溶液浓度变化.
+	\item 在进行不同硫酸浓度的拓展实验时, 
+	可能因为前一组将催化剂类型变成了稀释10倍的亚铁灵试剂, 因此
+	测得的诱导期变短, 导致实验结果有误.
+\end{enumerate}
 \newpage
 \section{原始数据记录}
+\begin{table}[!h]
+	\begin{center}
+		\begin{tabular}{l|l|l|l|l|l}
+			\hline
+			试剂&  溴酸钾&  溴化钾& 硫酸 & 硫酸铈铵 & 丙二酸\\
+			\hline
+			浓度$mol\cdot L^{-1}$&  &  &  &  &\\
+			\hline
+		 \end{tabular}
+	\end{center}
+\end{table}
 \begin{table}[!h]
 	\begin{center}
 		\begin{tabular}{l|l|l|l|l|l}
@@ -256,5 +346,5 @@ BZ振荡反应中诱导期与反应速率常数成反比, 测量一系列不同�
 \end{table}
 
 
-%%\bibliography{ref}
+\bibliography{ref}
 \end{document}
