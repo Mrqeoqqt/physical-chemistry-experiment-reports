@@ -20,56 +20,426 @@
 %%\bibliographystyle{unsrt}
 \section{实验目的}
 \begin{enumerate}
-\item YYY
+\item 掌握流动法测定乙醇脱水反应速率常数和活化能的方法.
+\item 评价$\gamma - Al_{2}O_{3}$小球催化乙醇脱水的催化性能.
+\item 掌握气相色谱在线分析方法, 使用校正面积归一伐进行定量分析.
 \end{enumerate}
+
+% \secction{预习要求}
+% \begin{enumerate}
+% \item 了解流速计, 流量计, 稳压, 稳流阀等的原理和使用方法.
+% \item 了解流速法测定催化剂性能的特点和实验方法.
+% \item 了解气相色谱分析原理和仪器基本构造.
+% \end{enumerate}
+
 \section{实验原理}
-\subsection{ZZZ}
+\subsection{催化剂的定义}
+根据IUPAC于1981年提出的定义: 催化剂是一种能改变反应速率
+但不改变该反应的标准吉布斯自由能的物质. 涉及催化剂的反应称为催化反应. 
+催化剂不能改变热力学平衡却能影响反应进程达到平衡的速度.
+\subsection{催化剂性能评价}
+评价催化剂的性能主要有以下几个指标:
+\begin{enumerate}
+\item 转化率=已经转化的反应物的物质的量 / 反应物起始的物质的量 $\times 100\%$
+\item 选择性=转化为目标产物的反应物的物质的量 / 已经转化的反应物的物质的量 $\times 100\%$
+\item 收率=转化为目标产物的反应物的物质的量 / 反应物起始的物质的量 $\times 100\%$
+\end{enumerate}
+\par
+另外, 催化剂的活性还可以用``时空收率''表示, 即单位时间内单位体积(或质量)
+催化剂上得到的目标产物的量. 需要注意的是, 在表述催化剂的性能时, 还要说明
+催化剂活性测定的条件, 如反应温度, 压力, 空速及反应原料组成等.
+\subsection{催化剂性能测定方法}
+工业上, 依据生产过程的特点, 生产装置可分为连续反应装置和间歇反应装置. 
+相应地, 实验室评价催化剂性能时, 可以用连续流动反应器(流动法)
+或者釜式反应器(静态法). 实验室用于流动法测定催化剂性能的反应器一般用
+耐热玻璃或不锈钢管制成. 催化剂装量一般从不足1毫升至数毫升.
+管式反应器依据实验方法的不同又可分为微分反应器和积分反应器.
+微分反应器一般要求反应转化率小于$5\%$, 而积分反应器可以在较高转化率下操作.
+\par
+本次实验采用流动法测定$\gamma-Al_2O_3$小球催化剂乙醇脱水的催化性能,
+使用U型管式玻璃反应器, 属积分反应器.
+\subsection{流动法}
+流动法是使流态反应物不断稳定地流经反应器, 
+在反应器催化剂床层中发生反应, 
+离开催化剂层反应停止, 然后设法分析产物种类及
+数量的一种催化剂活性测定方法. 当催化反应达到稳定状态后, 
+反应物的浓度就不随时间变化, 根据反应物区域的体积大小
+以及流入和流出反应器的流体的流速和化学组成就可以算出
+反应速率. 改变流体的流速或组分的浓度, 就可以测定反应的级数
+和速率常数.
+\subsection{一级反应速率常数}
+如果反应是在管式积分反应器内进行, 催化剂层的总长度是$l$, 
+反应管的横截面积是$S$, 反应物只有在催化剂层中才能进行反应. 
+假设反应$A\to B$是一级反应, 在反应物接触催化剂之前反应物$A$的浓度
+为$c(A_{0})$. 反应物接触到催化剂之后就发生反应, 随着反应物在催化剂
+层中通过, 反应物$A$的浓度就逐渐变小, 设在某一小薄层催化剂
+$dl$前反应物$A$的浓度为$c_{A}$, 当反应物通过$dl$之后, 浓度变为
+$c_{A}-dc_{A}$, 如下图所示.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.30\paperwidth]{fig/mechanics.png}\\
+	\caption{流动反应示意图}
+\end{figure}
+\par
+如果是在静止系统, 则一级反应的动力学公式如下, 式中$r$为反应速率, 
+$k_{T}$为反应速率常数.
+\begin{equation}
+r = -\frac{dc_{A}}{dt} = k_{T}c_{A}
+\end{equation}
+\par
+在流动系统中反应物是按稳定的流速流过催化剂层的, 
+流速(单位时间内流过的体积)为$F$, 在一小层催化剂内, 
+反应物与催化剂接触的时间为$dt$, 则
+\begin{equation}
+dt = \frac{dV}{F}
+\end{equation}
+式中, $dV$为一个$dl$薄层催化剂的体积, 而
+\begin{equation}
+dV = Sdl
+\end{equation}
+将上述两式带入(1)式可得
+\begin{equation}
+-\frac{dc_{A}}{c_{A}}=k_{T}\frac{S}{F}dl
+\end{equation}
+对上式积分, $c_{A}$的积分区间为$c_{0}$到$c$, $l$的
+积分区间为$0$到$l$(假设反应前后体积没有变化), 整理可得
+下式, 即为稳定流动系统积分反应器中一级反应速率常数表达式.
+\begin{equation}
+k_{T} = \frac{F}{Sl}\ln\frac{c_{0}}{c}
+\end{equation}
+\par
+在本实验的反应温度下乙醇呈气态, 反应物为乙醇和$N_{2}$
+的混合气体, 由于反应压力不高, 反应物近似以理想气体处理. 设
+$n_{A}$为单位时间加入乙醇的物质的量$n_{B}$与再起$N_{2}$的
+物质的量$n_{D}$的和, 则有:
+\begin{equation}
+F = \frac{n_{A}RT}{P}
+\end{equation}
+其中, $F$为反应温度$T$和反应压力$P$下的流速. 反应管中装填的
+催化剂体积为$V_{0}$, 则有:
+\begin{equation}
+Sl = V_{0}
+\end{equation}
+根据转化率的定义, 乙醇转化率$x = \frac{c_{0}-c}{c_{0}}$, 则:
+\begin{equation}
+\frac{c_{0}}{c} = \frac{1}{1-x}
+\end{equation}
+代入式(5)可得, 
+\begin{equation}
+k_{T} = \frac{n_{A}RT}{PV_{0}}\ln\frac{1}{1-x}
+\end{equation}
+式中, 
+\begin{enumerate}
+	\item[] $k_{T}$为乙醇脱水催化反应速率常数
+	\item[] $n_{A} = n_{B} + n_{D}$
+	\item[] $n_{B}$为单位时间进入反应器的乙醇的物质的量
+	\item[] $n_{D}$为单位时间进入反应器的$N_{2}$的物质的量
+	\item[] $x$为反应温度$T$下的乙醇转化率
+	\item[] $T$, $P$分别为反应条件下的温度和压力
+\end{enumerate}
+\subsection{乙醇脱水反应}
+乙醇在$\gamma-Al_2O_3$小球催化剂上发生脱水反应, 主要产物与反应温度
+密切相关. 温度低时, 乙醚为主要产物, 随着温度的升高, 
+乙烯的选择性逐渐升高, 并成为主要产物, 另外会有极少量的乙醛生成. 
+本实验反应温度为$200-250^\circ$C, 乙醚为主要产物. 
+乙醇脱水反应方程式如下: 
+\begin{enumerate}
+	\item $C_{2}H_{5}OH \to C_{2}H_{4} + H_{2}O$
+	\item $2C_{2}H_{5}OH \to C_{2}H_{5}OC_{2}H_{5} + H_{2}O$
+\end{enumerate}
+\par
+在较低的反应温度下, 由于主要生成乙醚, 
+可以近似认为反应前后体系体积不变, 即气相流速不变. 
+另外, 假定反应(1) 和反应(2) 为平行反应, 并假定二者皆为一级反应, 
+乙醇脱水生成乙烯和乙醚的速率常数分别为$k_{T1}$和$k_{T2}$, 生成
+乙烯和乙醚的选择性分别为$s_{1}$和$s_{2}$, 忽略乙醇脱氢生成乙醛
+的量, 则$s_{1}+s_{2}\approx 1$, 对于平行一级反应,
+\begin{equation}
+	\begin{aligned}
+		\frac{k_{T1}}{k_{T2}} &= \frac{s_{1}}{s_{2}}\\
+		k_{T} &= k_{T1} + k_{T2}\\
+	\end{aligned}
+\end{equation}
+可得:
+\begin{equation}
+	\begin{aligned}
+		k_{T1} &= s_{1}k_{T}\\
+		k_{T2} &= s_{2}k_{T}\\
+	\end{aligned}
+\end{equation}
+\subsection{乙醇脱水催化反应装置}
+流动法测定$\gamma-Al_2O_3$小球催化乙醇脱水的催化性能(色谱法)
+的实验装置主要由以下几个部分构成:
+\begin{enumerate}
+\item \textbf{原料进样单元}: 乙醇进样泵, $N_{2}$流量控制系统
+\item \textbf{反应单元}: 反应炉及温度控制和测量仪表
+\item \textbf{色谱分析单元}: 反应尾气连接气路, 进样阀及气相色谱仪
+\item \textbf{数据采集及处理单元}: 色谱工作站及计算机
+\end{enumerate}
+\subsection{色谱定量方法}
+目前常用的色谱定量分析方法主要有三种: 面积归一法, 内标法和外标法.
+本次实验采用面积归一法.
+\par
+由于不同组分在检测器上的响应值不同, 故需对峰面积采用校正因子校正, 
+可称为校正面积归一法, 计算公式为:
+\begin{equation}
+n_{i}\% = \frac{f_{Mi}A_{i}}{\sum f_{Mi}A_{i}}\times 100\%
+\end{equation}
+式中, $n_{i}\%$, $f_{Mi}$和$A_{i}$分别为待测组分的摩尔百分浓度, 
+摩尔校正因子, 峰面积. 具体组分的摩尔校正因子在实验室的黑板上列明.
+\par
+面积归一法的优点是简便, 受操作条件影响较小, 但要求所有组分都能被
+色谱检测出, 因此有一定的局限性和误差.
 \section{仪器与药品}
 \begin{enumerate}
-    \item \textbf{仪器:} XXX
-    \item \textbf{药品:} XXX
+    \item \textbf{仪器}: 微型固定床反应装置, 气相色谱仪, 气源, 电脑,
+	检漏用毛笔,肥皂液, 微量进样器($1\mu L$和$100\mu L$), 直尺, 表面皿, 
+	乙醇试剂, 样品筛($20 -- 40$目), 微量注射泵控制器, 计时器,
+	保温控制仪(加热带), 保温控制仪(电炉), 温度显示器(电炉), 微量注射泵主体, 
+	U型反应管, 电炉, 转子流量计, 压力表, 皂膜流量计, 普通六通阀(接填充柱), 
+	气动自动进样阀(接毛细管柱), 三通
+	\item \textbf{仪器}: 氮气钢瓶(黑色), 总阀, 减压阀, 表头(总压), 表头(输出压力),
+	空气发生器, 氢气发生器(保证试验时水量处于上下限之间)
+    \item \textbf{药品}: $\gamma-Al_2O_3$小球催化剂, 石英砂, 乙醇
+\end{enumerate}
+\section{实验注意事项}
+\begin{enumerate}
+\item 系统必须不漏气
+\item 在实验过程中热电偶的位置必须固定不变
+\item 由于使用气相色谱分析尾气组成, 所以尾气管路必须保温, 
+确保加热带开关打开
+\item 氮气的流速以及乙醇的进样速度在实验过程中必须保持稳定
+\item 实验过程中要勤观察, 尤其要注意反应温度波动情况
 \end{enumerate}
 \section{实验步骤}
-\subsection{实验准备}
-XXX
-\subsection{YYY}
-\subsection{收尾}
-清洗整理仪器.
-\section{拓展实验}
+详见``流动法测定$Al_2O_3$小球催化剂乙醇脱水的催化性能修改后步骤''文档.
+% \section{实验步骤}
+% \subsection{装样}
+% \begin{enumerate}
+% \item 一手扶住U型反应管上端, 另一只手顺时针松开螺帽, 
+% 取下反应管. 取下O型圈和螺帽, 将管内的石英砂和催化剂倒入催化剂回收瓶, 
+% 清洗反应管(可用PVC气路管作为毛刷), 用去离子水荡洗, 放入$120^\circ$C烘箱干燥.
+% \item 称取$50mg(\pm 1mg)$的$\gamma-Al_2O_3$小球催化剂, 
+% 在干燥后的U型反应管口套上漏斗, 加入称取的催化剂, 抖动, 使催化剂均匀分布于U型
+% 管底.
+% \item 分别称取两份$0.4g 8 -- 16$目石英砂, 放入反应管两端.
+% \item 分别套上螺帽和O型圈, 将反应管接入反应装置, 逆时针旋紧(但不要产生扭力).
+% \end{enumerate}
+% \subsection{活化}
+% \begin{enumerate}
+% \item 在减压阀处于关闭状态时打开氮气钢瓶总阀, 顺时针转动减压阀旋钮, 
+% 调节出口压力为$0.3$MPa. 
+% \item 打开控制面板上的开关阀, 通过稳压阀旋钮, 
+% 调节压力指示为$0.1$MPa. 调节调流阀旋钮, 使转子流量计指示约为
+% $50mL \cdot min^{-1}$.
+% \item 检漏, 为了防止肥皂水流入电炉, 用吸水纸包住反应管, 
+% 用蘸有肥皂液的毛笔涂抹反应管与螺帽的接口处, 
+% 如果有气泡产生, 说明此处漏气, 用吸水纸擦干螺帽后进一步旋紧. 
+% 再次检漏, 若再次漏气则需要更换O型圈.
+% \item 擦干反应管后, 调整热电偶的位置, 
+% 使测量端与反应管底部齐平. 调节升降台, 使反应管处于
+% 电炉之中. 用直尺测量螺帽口与电炉口之间的距离, 控制到$4 -- 5$cm左右. 
+% 用保温带盖住电炉口处的空隙.
+% \item 打开控制面板上电源开关, 设置电路温度控制参数(按SET键两次再按左键进入设置界面), 
+% 按照温度--时间--温度设置每一段的程序升温条件. 设置完毕, 等待仪器
+% 自动进入工作界面. 
+% \item 同时按住上下键直至出现RUN.
+% \end{enumerate}
+% \subsection{气相色谱仪设置}
+% \begin{enumerate}
+% \item 打开气相色谱仪柱箱舱门, 查看是否已正确安装SE-54毛细管色谱柱, 
+% 关闭舱门.
+% \item 打开色谱仪电源开关和电脑中NetChrom在线工作站.
+% \item 点击左下角图标连接对应的色谱仪, 右上角界面会显示当前色谱的参数
+% \item 设置进样$A$为$120^\circ$C, 柱箱$60^\circ$C, FID$250^\circ$C, 
+% 气动阀$120^\circ$C, 停止时间$4.9min$, 满屏时间$5min$, 上限800, 下限0. 
+% 在``系统->选项->操作''中设置文件保存位置.
+% \item 点击开始控温, 打开氢气和空气发生器开关, 通过色谱顶部旋钮, 按3键调节载气$N_{2}$
+% 流速为$2mL\cdot min^{-1}$, 对应a柱压力为35kPa, 分流比调至20左右. 按4键可以调节FID检测器参数, 
+% 氢气流速为$30mL\cdot min^{-1}$, 空气流速为$300mL\cdot min^{-1}$. 按7键进入采集参数设置界面, 
+% 进样次数设置为3次, 间隔时间为$5min$, 按SET键保存退出设置状态.
+% \item 按下键进入$No. 5$界面, 将第一排参数设置为$0.02$和$1$, 表示$0.02$min时气动阀
+% 采样, $1min$时分析采集样品.
+% \item 检测点火是否成功.
+% \end{enumerate}
+% \subsection{反应}
+% \begin{enumerate}
+% \item 打开气路管保温带加热开关(位于气路面板右侧), 控制温度设置为$120^\circ$C, 
+% 将气路的三通调至与皂膜流量计相通的位置, 轻轻挤压皂膜流量计
+% 底部的滴帽, 产生成串气泡以润湿管壁, 直至气泡能从流量计管壁冒出. 
+% 快速挤压滴帽, 产生单个皂膜, 在皂膜通过第一个刻度线时开始计时, 
+% 通过第二个刻度线时停止计时, 通过调流阀调节流速, 使皂膜流量计流速
+% 为$50mL\cdot min$.(需要准确记录流速)
+% \item 将三通转至连接尾气位置, 打开微量注射泵开关, 设置原料液进样参数. 
+% 选择流量->上海高鸽$100\mu L$注射器, 设置单位为$\mu L$, 分配液量$30$, 
+% 灌注时间为$15min$.
+% \item 待温度恒定后可以开始反应.
+% \item 进样器取$80\mu L$乙醇, 排出气体, 将进样器插入进样口, 
+% 将进样器固定到微量注射泵的卡槽中, 固定针筒. 调节注射泵挡板至
+% 正好顶住进样器推杆, 按启动键启动微量注射泵开始进样. 
+% \item 按色谱控制面板上的start键开始气相色谱分析程序.
+% \item 关闭微量注射泵, 色谱仪, 观察反应后催化剂的颜色变化.
+% \end{enumerate}
+
+\section{拓展实验设计}
+升高反应温度至$170^\circ$C, 使生成乙烯的反应占主导, 无法控制反应前后体积近似不变.
+\section{实验现象记录}
+\begin{enumerate}
+	\item 反应后催化剂的颜色变化
+\end{enumerate}
 
 \newpage
 \section{数据处理}
-
-\newpage
-\section{思考题}
 \begin{enumerate}
-	\item 自催化发生在哪一个过程? 自催化剂是何种物质?
-	\item 如何理解本实验为开放系统? 并且远离平衡态?
-	\item 两个稳态是哪两个状态?
-	\item 实验现象的观察和解释.
-	\item 电极上发生的反应?
-	\item 同心圆的形成机制?
+\item 根据$n_{B} = \frac{q_{C_{2}H_{5}OH}\times \rho_{C_{2}H_{5}OH}}{M_{C_{2}H_{5}OH}}$
+求出单位时间通入反应体系乙醇的物质的量$n_{B}$, 式中$q_{C_{2}H_{5}OH}$, $\rho_{C_{2}H_{5}OH}$, $M_{C_{2}H_{5}OH}$
+分别为乙醇进样速度, 乙醇在进样温度(室温)时的密度, 乙醇的摩尔质量. 单位时间通入反应体系
+$N_{2}$的物质的量$n_{D}$由$q_{n_{2}}P = n_{D}RT$求出, 式中$q_{N_{2}}$为皂膜流量计标定的
+载气氮气的流速, $T$, $P$分别为标定时的室温大气压.
+\item 根据相关定义求出并正确表示各温度下乙醇的转化率及
+生成乙烯和乙醚的选择性, 以及接触时间, 空速, 收率和时空收率.
+\item 根据式(9)计算各温度下乙醇脱水催化反应速率常数$k_{T}$.
+\item 分别计算各温度下乙醇脱水生成乙烯和乙醚的反应速率常数
+$k_{T1}$和$k_{T2}$.
+\item 分别以$\ln k_{T1}$和$\ln k_{T2}$对$\frac{1}{T}$作图, 
+从直线斜率求出乙醇脱水生成乙烯和乙醚的表观活化能$E_{a1}$和$E_{a2}$.
+
+\end{enumerate}
+\newpage
+\section{思考题与讨论}
+\begin{enumerate}
+	\item 本次实验中转子流速计和皂膜流速计各有什么作用?
+	\item 流动法测定催化剂活化能的特点是什么? 有哪些注意事项?
+	\item 如何通过改变反应条件, 控制平行反应的选择性?
+	\item 从阿伦尼乌斯公式来测定表观活化能时, 需要对反应有何控制?
 \end{enumerate}
 \newpage
 \section{原始数据记录}
 \begin{table}[H]
 	\begin{center}
-		\begin{tabular}{l|l|l|l|l|l}
+		\begin{tabular}{l|l}
 			\hline
-			温度/$^\circ$C&  诱导期/s&  $\phi_1$/mV|$T_{1}$/s & $\phi_2$/mV|$T_{2}$/s & $\phi_3$/mV|$T_{3}$/s & $\bar{\phi}$/mV|$\bar{T}$/s\\
+			室温/$^\circ$C & 大气压/kPa\\
 			\hline
-			30&  &  &  &  &  \\
-			\hline
-			35&  &  &  &  &  \\
-			\hline
-			40&  &  &  &  &  \\
-			\hline
-			45&  &  &  &  &  \\
-			\hline
-			50&  &  &  &  &  \\
+						   &           \\
 			\hline
 		 \end{tabular}
 	\end{center}
+	\caption{实验环境参数记录}
+\end{table}
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{l|l|l}
+			\hline
+			物质& 沸点/$^\circ$C & 摩尔校正因子$f_{M}$\\
+			\hline
+			乙醇&   78      &	\\
+			\hline
+			乙烯&  -103.9   &	\\
+			\hline
+			乙醚&  35       &	\\
+			\hline
+			乙醛&  20.8     &	\\
+			\hline
+		 \end{tabular}
+	\end{center}
+	\caption{物质沸点和摩尔校正因子}
+\end{table}
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{l|l|l|l}
+			\hline
+			$q_{C_{2}H_{5}OH}$/($mL\cdot min^{-1}$) & $\rho_{C_{2}H_{5}OH}$/($g\cdot mL^{-1}$) 
+			& $M_{C_{2}H_{5}OH}$/($g\cdot mol^{-1}$) & $q_{N_{2}}$/($mL\cdot min^{-1}$)\\
+			\hline
+						                            &                                          
+			&                                       &                                  \\
+			\hline
+			
+		 \end{tabular}
+	\end{center}
+	\caption{实验参数记录}
+\end{table}
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{l|l}
+			\hline
+			$n_{B}$/($mol\cdot min^{-1}$) & $n_{D}$/($mol\cdot min^{-1}$)\\
+			\hline
+			                              &                              \\
+			\hline
+		 \end{tabular}
+	\end{center}
+	\caption{反应物和载气流速记录}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{l|l}
+			\hline
+			时间/hh:mm:ss &反应温度/$^\circ$C\\
+			\hline
+						  &                  \\
+			\hline
+						  &                  \\
+			\hline
+						  &                  \\
+			\hline
+						  &                  \\
+			\hline
+						  &                  \\
+			\hline
+						  &                  \\
+			\hline
+		 \end{tabular}
+	\end{center}
+	\caption{实验过程反应温度波动记录}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{l|l|l|l}
+			\hline
+			温度/$^\circ$C &乙烯$A_{1}$      &乙醚$A_{2}$  &乙醇$A_{3}$\\ 
+			\hline
+			&             &          &              \\
+			\hline
+			&             &          &              \\
+			\hline
+			&             &          &              \\
+			\hline
+			&             &          &              \\
+			\hline
+			&             &          &              \\
+			\hline
+			&             &          &              \\
+			\hline
+		 \end{tabular}
+	\end{center}
+	\caption{峰面积记录}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{l|l|l|l}
+			\hline
+			温度/$^\circ$C &乙烯$n_{1}$      &乙醚$n_{2}$  &乙醇$n_{3}$\\ 
+			\hline
+			&             &          &              \\
+			\hline
+			&             &          &              \\
+			\hline
+			&             &          &              \\
+			\hline
+			&             &          &              \\
+			\hline
+			&             &          &              \\
+			\hline
+			&             &          &              \\
+			\hline
+		 \end{tabular}
+	\end{center}
+	\caption{面积归一法摩尔百分浓度}
 \end{table}
 %%\bibliography{ref}
 \end{document}
