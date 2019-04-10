@@ -304,6 +304,123 @@ $k_{T1}$和$k_{T2}$.
 \item 分别以$\ln k_{T1}$和$\ln k_{T2}$对$\frac{1}{T}$作图, 
 从直线斜率求出乙醇脱水生成乙烯和乙醚的表观活化能$E_{a1}$和$E_{a2}$.
 
+\begin{table}[H]
+	\begin{center}
+		\caption{拟合参数}
+		\begin{tabular}{l|l|l|l|l|l|l}
+			\hline
+			$T/^\circ$C&$k_{T}/s^{-1}$&$\frac{1}{T}/K^{-1}$& $k_{T1}/s^{-1}$ & $k_{T2}/s^{-1}$ & $\ln k_{T1}/ln s^{-1}$ & $\ln k_{T2}/ln s^{-1}$\\
+			\hline
+			$200$&$7.634\times 10^{-1}$&$2.113$ & $1.063\times 10^{-2}$ & $7.523\times 10^{-1}$ &$-4.544$&$-0.2846$\\
+			\hline
+			$210$&1.447&$2.070$ & $3.191\times 10^{-2}$ & $1.416$ &$-3.445$&$0.3475$\\
+			\hline
+			$220$&2.322&$2.028$ & $9.713\times 10^{-2}$ & $2.223$ &$-2.332$&$0.7990$\\
+			\hline
+			$230$&3.543&$1.987$ & $2.661\times 10^{-1}$ & $3.274$ &$-1.324$&$1.186 $\\
+			\hline
+			$240$&4.361&$1.949$ & $4.830\times 10^{-1}$ & $3.873$ &$-0.7278$&$ 1.354$\\
+			\hline
+		 \end{tabular}
+	\end{center}
+\end{table}
+\begin{table}[H]
+	\begin{center}
+		\caption{各温度下的转化率, 选择性和收率}
+		\begin{tabular}{l|l|l|l|l|l}
+			\hline
+			$T^\cdot$C	&乙醇转化率/$\%$	&乙烯选择性/$s_1\%$	&乙醚选择性/$s_2\%$	& 乙烯收率/$Y_1\%$ & 乙醚收率/$Y_2\%$\\
+			\hline
+			200&11.893 &1.393&98.55&0.170 &	11.718 \\
+			\hline
+			210&20.953 &2.205&97.80&0.464 &	20.489 \\
+			\hline
+			220&30.889 &4.184&95.78&1.294 &	29.583 \\
+			\hline
+			230&42.457 &7.511&92.40&3.192 &	39.228 \\
+			\hline
+			240&48.678 &11.07&88.81&5.392 &	43.230 \\
+			\hline
+		 \end{tabular}
+	\end{center}
+\end{table}
+\begin{table}[H]
+	\begin{center}
+		\caption{各温度下的时空收率}
+		\begin{tabular}{l|l|l}
+			\hline
+			$T^\cdot$C&乙烯时空收率/$mol\cdot min^{-1}\cdot g^{-1}$&乙醚时空收率/$mol\cdot min^{-1}\cdot g^{-1}$\\
+			\hline
+			200&$1.13\times 10^{-5}$&$8.00\times 10^{-4}$\\
+			\hline
+			210&$3.15\times 10^{-5}$&$1.40\times 10^{-3}$\\
+			\hline
+			220&$8.82\times 10^{-5}$&$2.02\times 10^{-3}$\\
+			\hline
+			230&$2.18\times 10^{-4}$&$2.68\times 10^{-3}$\\
+			\hline
+			240&$3.68\times 10^{-4}$&$2.95\times 10^{-3}$\\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+乙醇液体空速$=\frac{q_{v}(C_{2}H_{5}OH)}{V_{0, cat}} = 
+\frac{2.00\times10^{-3}mL\cdot min^{-1}}{0.0501g/0.2222g\cdot cm^{-3}} = 8.87\times10^{-3}min^{-1}$.
+\begin{table}[H]
+	\begin{center}
+		\caption{各温度下的空速与接触时间}
+		\begin{tabular}{l|l|l}
+		\hline
+		$T^\cdot$C &总空速/$min^{-1}$&接触时间/min\\
+		\hline
+		200		&$3.62\times 10^{2}$	&$2.76\times 10^{-1}$\\
+		\hline
+		210 	&$3.69\times 10^{2}$	&$2.71\times 10^{-1}$\\
+		\hline
+		220 	&$3.77\times 10^{2}$	&$2.65\times 10^{-1}$\\
+		\hline
+		230 	&$3.85\times 10^{2}$	&$2.60\times 10^{-1}$\\
+		\hline
+		240 	&$3.92\times 10^{2}$	&$2.55\times 10^{-1}$\\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+乙醇脱水生成乙烯表观活化能计算,
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.50\paperwidth]{fig/kT1.png}\\
+	\caption{反应速率常数$\ln(k_{T1})$对温度$\frac{1}{T}$作图}
+\end{figure}
+最小二乘法一次函数拟合结果如下,
+\begin{equation}
+	\begin{aligned}
+		\ln k_{T1} &= -2.372\times 10^{4} \times \frac{1}{T} + 45.67\\
+		E_{a1} &= 2.372\times 10^{4} \times 8.314 J\cdot mol^{-1}\\
+		       &= 197.2 kJ\cdot mol^{-1}\\
+		R^{2} &= \frac{SSR}{SST} = \frac{\sum{(\hat{k_{T1,i}}-\bar{k_{T1}})^{2}}}{\sum{(k_{T1,i}-\bar{k_{T1}})^{2}}}\\
+					&=0.9928\\
+	\end{aligned}
+\end{equation}
+乙醇脱水生成乙醚表观活化能计算,
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.50\paperwidth]{fig/kT2.png}\\
+	\caption{反应速率常数$\ln(k_{T2})$对温度$\frac{1}{T}$作图}
+\end{figure}
+最小二乘法一次函数拟合结果如下,
+\begin{equation}
+	\begin{aligned}
+		\ln k_{T2} &= -1.004\times 10^{4} \times \frac{1}{T} + 21.05\\
+		E_{a2} &= 1.004\times 10^{4} \times 8.314 J\cdot mol^{-1}\\
+				&= 83.47 kJ\cdot mol^{-1}\\
+		R^{2} &= \frac{SSR}{SST} = \frac{\sum{(\hat{k_{T2,i}}-\bar{k_{T2}})^{2}}}{\sum{(k_{T2,i}-\bar{k_{T2}})^{2}}}\\
+					&=0.9683\\
+	\end{aligned}
+\end{equation}
+
+
 \end{enumerate}
 \newpage
 \section{思考题与讨论}
