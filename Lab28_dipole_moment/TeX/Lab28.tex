@@ -149,7 +149,7 @@ $P_{sol} = x_{1}P_{1}+x_{2}P_{2}$,
 	\centering
 	\begin{aligned}
 		P &= P_{2}^{\infty} = \lim\limits_{x_{2}\to 0} P_{2}\\
-	  &=\frac{3\alpha\epsilon_{r1}}{(\epsilon{r1}+2)^{2}}\cdot \frac{M_{1}}{\rho_{1}}
+	  &=\frac{3\alpha\epsilon_{r1}}{(\epsilon_{r1}+2)^{2}}\cdot \frac{M_{1}}{\rho_{1}}
 	  + \frac{\epsilon_{r1}-1}{\epsilon_{r1}+2}\cdot \frac{M_{2}-\beta M_{1}}{\rho_{1}}\\
 	P_{elec} &= R_{2}^{\infty} = \lim\limits_{x_{2}\to 0}R_{2}\\
 			 &=\frac{n_{1}^{2}-1}{n_{1}^{2}+2}\cdot \frac{M_{2}-\beta M_{1}}{\rho_{1}}
@@ -214,16 +214,107 @@ $R_{2}^{\infty}$的计算公式, 作差得到转向极化度$P_{rot}$, 转向极
 	\item 倒出少量水, 然后补加并调至刻度线, 重复测量1-2次.
 	\item 同样方法测量各液体密度, 每次测量前都需先将密度管干燥.
 \end{enumerate}
+% \newpage
 % \section{拓展实验}
+\newpage
+\section{数据处理}
+\subsection{计算$\gamma$}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.5\paperwidth]{fig/molfraction.png}
+	\caption{折光率与摩尔分数曲线}
+\end{figure}
+\begin{equation}
+	\centering
+	\begin{aligned}
+		n_{sol} &= n_{1}(1+\gamma x_{2})\\
+						&= n_{1} + n_{1}\times \gamma x_{2}\\
+		n_{1} &= 1.4279\\
+		\gamma &= \frac{n_{1}\times \gamma}{n_{1}} = \frac{-0.06712}{1.4279}\\
+					&= -0.04701\\
+		R^{2} &= 0.9999\\
+	\end{aligned}
+\end{equation}
+\subsection{计算$\beta$}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.5\paperwidth]{fig/density.png}
+	\caption{密度与摩尔分数曲线}
+\end{figure}
+\begin{equation}
+	\centering
+	\begin{aligned}
+		\rho_{sol} &= \rho_{1}(1+\beta x_{2})\\
+							&=\rho_{1} + \rho_{1}\times \beta x_{2}\\
+		\rho_{1} &= 0.7763g\cdot cm^{3}\\
+		\beta &= \frac{\rho_{1}\times \beta}{\rho_{1}} = \frac{0.09181}{0.7763}\\
+					&= 0.1183\\
+		R^{2} &= 0.9953\\
+	\end{aligned}
+\end{equation}
+\subsection{计算$\alpha$}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.5\paperwidth]{fig/jiedian.png}
+	\caption{相对介电常数与摩尔分数曲线}
+\end{figure}
+\begin{equation}
+	\centering
+	\begin{aligned}
+		\epsilon_{r, sol} &= \epsilon_{r1}(1+\alpha x_{2})\\
+											&= \epsilon_{r1}+\epsilon_{r1}\times \alpha x_{2}\\
+		\epsilon_{r1} &= 1.9912\\
+		\alpha &= \frac{\epsilon_{r1}\times \alpha}{\epsilon_{r1}} = \frac{3.9695}{1.9912}\\
+						&= 1.9935\\
+		R^{2} &= 0.9987\\
+	\end{aligned}
+\end{equation}
+\subsection{偶极矩的计算}
+\begin{equation}
+	\centering
+	\begin{aligned}
+		P &= P_{2}^{\infty} = \lim\limits_{x_{2}\to 0} P_{2}\\
+	  &=\frac{3\alpha\epsilon_{r1}}{(\epsilon_{r1}+2)^{2}}\cdot \frac{M_{1}}{\rho_{1}}
+		+ \frac{\epsilon_{r1}-1}{\epsilon_{r1}+2}\cdot \frac{M_{2}-\beta M_{1}}{\rho_{1}}\\
+		&=\frac{3\times 1.9935\times 1.9912}{(1.9912+2)^{2}}\cdot \frac{84g\cdot mol^{-1}}{0.799g \cdot cm^{-3}}
+		+ \frac{1.9912-1}{1.9912+2}\cdot \frac{88g\cdot mol^{-1}-0.1183\times 84g\cdot mol^{-1}}{0.799g \cdot cm^{-3}}\\
+		&=102.86cm^{3}\cdot mol^{-1}\\
+	P_{elec} &= R_{2}^{\infty} = \lim\limits_{x_{2}\to 0}R_{2}\\
+			 &=\frac{n_{1}^{2}-1}{n_{1}^{2}+2}\cdot \frac{M_{2}-\beta M_{1}}{\rho_{1}}
+			 +\frac{6n_{1}^{2}M_{1}\gamma}{(n_{1}^{2}+2)^{2}\rho_{1}}\\
+			 &=\frac{1.4279^{2}-1}{1.4279^{2}+2}\cdot \frac{88g\cdot mol^{-1}-0.1183\times 84g\cdot mol^{-1}}{0.799g \cdot cm^{-3}}
+			 +\frac{6\times 1.4279^{2}\times 84g\cdot mol^{-1}\times (-0.04701)}{(1.4279^{2}+2)^{2}\times 0.799\cdot cm^{-3}}\\
+			 &=21.42cm^{3}\cdot mol^{-1}\\
+			 \mu &= 0.0426\times 10^{-30} \sqrt{(P_{2}^{\infty} - R_{2}^{\infty})T}\\
+			 &=0.0426\times 10^{-30} \sqrt{(102.86-21.42)\times 10^{6}\times (273.15+17.66)} C\cdot m\\
+			 &=6.56\times 10^{-27} C\cdot m\\
+	\end{aligned}
+\end{equation}
 
-% \newpage
-% \section{数据处理}
-
-% \newpage
-% \section{思考题}
-% \begin{enumerate}
-% 	\item XXX
-% \end{enumerate}
+					
+\newpage
+\section{思考与讨论}
+\begin{enumerate}
+	\item 准确测定溶质的摩尔极化度和摩尔折射度时, 为何要外推至无限稀释?\\
+	公式中假定分子间没有相互作用, 因此需要将数据外推至无限稀释后
+	才可以近似成分子间无相互作用的气相状态.
+	\item 用溶液法测定物质的$\mu$时, 所用溶剂须具备什么条件? 
+	具备什么性质的溶剂为最佳溶剂?\\
+	溶剂不产生折光效应, 因此与溶质不发生反应的非极性溶剂最佳.
+	\item 同一种物质用溶液法和气相法测得的偶极矩$\mu$是否会完全一致?
+	为什么? 同一种物质, 用不同的溶剂以溶液法测定偶极矩$\mu$是否相同? 为什么?\\
+	不一致, 因为溶液法测偶极矩会受到溶剂和浓度的影响. 不同, 不同的溶剂会对
+	折光率的测定产生影响, 也可能会与溶质发生反应.
+	\item 误差分析:\\
+	(1) 理论误差由高频代替低频电场以及用可见光(中频)代替红外光(低频)光源带来的误差, 用稀溶液外推得到
+	无限稀释近似无相互作用的气相状态. (2) 测量密度时由于倾斜角度不同, 可能导致每次体积变化. (3) 折光率测定
+	过程中的读数误差, 温度波动. (4) 配制溶液时乙酸乙酯挥发导致浓度误差.
+	\item 实验拓展: \\
+	拓展探究了乙酸乙酯--环己烷溶液挥发对溶液浓度产生的影响. 实验结束后, 分别对1号容量瓶中的溶液, 烧杯中敞口放置
+	5分钟, 10分钟, 15分钟和20分钟的溶液进行折光率的测定, 发现保存在容量瓶中的溶液折光率几乎不发生变化, 在烧杯中敞口
+	放置的溶液在5分钟以内折光率变化较小, 10分钟以上折光率产生显著变化. 因此在实验过程中, 溶液需要保存在容量瓶中, 使用
+	移液管移取溶液和用密度管称量溶液时, 动作要迅速.
+\end{enumerate}
 \newpage
 \section*{原始数据记录}
 \begin{table}[H]

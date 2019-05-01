@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.23)  11 APR 2019 00:50
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.23)  2 MAY 2019 00:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/xym/Desktop/physical-chemistry-labs/Lab15_gamma_Al2O3_catalyst/TeX/Lab15
-(c:/Users/xym/Desktop/physical-chemistry-labs/Lab15_gamma_Al2O3_catalyst/TeX/Lab15.tex
+**c:/Users/xym/Desktop/physical-chemistry-labs/Extend_exp_electronic_conductivity/template
+(c:/Users/xym/Desktop/physical-chemistry-labs/Extend_exp_electronic_conductivity/template.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (c:/texlive/2018/texmf-dist/tex/latex/base/article.cls
@@ -1323,8 +1323,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box64
 \@float@everytoks=\toks35
 \@floatcapt=\box65
-) (./Lab15.aux)
-\openout1 = `Lab15.aux'.
+) (./template.aux)
+\openout1 = `template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
@@ -1443,24 +1443,19 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 18.
  (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+File: fig/resistivity_conductivity_definition.PNG Graphic file (type bmp)
+<fig/resistivity_conductivity_definition.PNG>
+ [1
 
-]
-File: fig/mechanics.png Graphic file (type bmp)
-<fig/mechanics.png>
- [2] [3] [4] [5] [6]
-File: fig/kT1.png Graphic file (type bmp)
-<fig/kT1.png>
-File: fig/kT2.png Graphic file (type bmp)
-<fig/kT2.png>
- [7] [8] [9] [10] [11] (./Lab15.aux) ) 
+] [2] [3] [4] [5] (./template.aux) ) 
 Here is how much of TeX's memory you used:
- 32457 strings out of 492970
- 772097 string characters out of 6137298
- 916604 words of memory out of 5000000
- 36022 multiletter control sequences out of 15000+600000
- 541145 words of font info for 89 fonts, out of 8000000 for 9000
+ 32447 strings out of 492970
+ 772203 string characters out of 6137298
+ 913602 words of memory out of 5000000
+ 36008 multiletter control sequences out of 15000+600000
+ 538086 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 62i,11n,68p,10504b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,13n,68p,10511b,291s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Lab15.pdf (11 pages).
+Output written on template.pdf (5 pages).
