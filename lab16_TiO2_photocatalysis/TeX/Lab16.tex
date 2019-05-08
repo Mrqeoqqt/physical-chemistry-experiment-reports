@@ -40,14 +40,48 @@ $TiO_{2}$主要有如下两种晶型, 左图为金红石型, 右图为锐钛矿�
 回到基态, 即发生化学反应, 整个过程就是光催化反应, 图示如下.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = 0.5\paperwidth]{fig/principle.png}
+	\includegraphics[width = 0.4\paperwidth]{fig/principle.png}
 	\caption{光催化反应原理}
 \end{figure}
 \par
 \subsection{光催化反应}
-光催化反应是光化学反应的一种
+光催化反应是光化学反应的一种. 光化学反应有别于热化学反应, 在恒温恒压下可以使一些系统的Gibbs自由能增加, 
+例如光合作用, 光解水制氢等. 但如果把辐射光源切断, 则该反应仍旧向Gibbs自由能减少的方向进行, 力图
+回复原来的状态. \par
+热化学反应活化能源于分子碰撞, 而光化学反应的活化能源于光子的能量(光化学反应的活化能通常为$30kJ\cdot mol^{-1}$
+左右, 小于一般热化学反应的活化能). 热化学反应的反应速率受温度影响大, 而光化学反应的温度系数小. \par 
 
 \subsection{多相催化反应}
+对于多相催化反应而言, 反应物在催化剂表面反应要经过扩散, 吸附, 表面反应以及脱附等步骤, 
+以二氧化钛为催化剂的光催化反应也不例外. 对采用二氧化钛为固相催化剂的有机物光催化降解反应, 
+扩散过程可能成为速率控制步骤. 在剧烈搅拌情况下, 可认为消除了扩散的影响. 如果反应物的吸附
+和产物的解吸进行的非常快, 则多相光催化的总反应速率只由表面反应所决定. 假定反应速率r为
+\begin{equation}
+	r = k\theta_{A}C^{*}\\
+\end{equation}
+式中, $k$为表面反应速率常数, $\theta_{A}$是有机物分子A在二氧化钛表面的覆盖度, $C^{*}$
+是二氧化钛表面的催化活性中心数目.
+\par
+在一个恒定的系统中, $C^{*}$可以认为不变, 假定产物吸附很弱, 则$\theta_{A}$可由Langmuir
+公式求得, 
+\begin{equation}
+	\frac{1}{r} = \frac{1}{kK_{A}c_{A}} + \frac{1}{k}\\
+\end{equation}
+式中, $K_{A}$为A在二氧化钛表面的吸附平衡常数, $c_{A}$是A的浓度. 该式为Langmuir-Hinshelwood动力学
+方程, 表明$\frac{1}{r}$和$\frac{1}{c_{A}}$之间服从线性关系.
+\begin{itemize}
+	\item 当A的浓度很低时, $K_{A}c_{A} << 1$, 此时$-\frac{dc_{A}}{dt} = r = k^{'}c_{A}$, 
+	经积分得
+	\begin{equation}
+		\ln(c_{A0}/c_{At}) = k^{'}t\\
+	\end{equation}
+	$\ln(c_{A0}/c_{At})-t$为直线关系, 表现为一级反应.
+	\item 当A的浓度很高时, A在催化剂表面的吸附达到饱和状态, 
+	此时 $-\frac{dc_{A}}{dt} = r = k$, $c_{At} = c_{A0}kt$, $c_{At}-t$为直线关系, 
+	表现为零级反应动力学.
+	\item 如果浓度适中, 反应级数介于0~1.
+\end{itemize}
+所以L-H方程意味着随反应物浓度的增加, 光催化降解反应的级数将由一级经过分数级而下降为零级.
 
 \section{仪器与药品}
 \begin{enumerate}
