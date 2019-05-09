@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.23)  8 MAY 2019 14:31
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.23)  10 MAY 2019 00:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1451,18 +1451,26 @@ File: fig/principle.png Graphic file (type bmp)
  [1
 
 ] [2] [3]
-Overfull \hbox (6.1241pt too wide) in paragraph at lines 133--136
+Overfull \hbox (6.1241pt too wide) in paragraph at lines 135--138
 \TU/lmr/m/n/10.53937 (\TU/SimSun(0)/m/n/10.53937 没 有\TU/lmr/m/n/10.53937 )-> \TU/SimSun(0)/m/n/10.53937 设 置 波 长 为 最 大 吸 收 波 长\TU/lmr/m/n/10.53937 -> \TU/SimSun(0)/m/n/10.53937 启 动\TU/lmr/m/n/10.53937 -> \TU/SimSun(0)/m/n/10.53937 输 入 每 个 标 准 样 品 的 浓 度 \TU/lmr/m/n/10.53937 ($\OT1/cmr/m/n/10.53937 0\OML/cmm/m/it/10.53937 ; \OT1/cmr/m/n/10.53937 4\OML/cmm/m/it/10.53937 ; \OT1/cmr/m/n/10.53937 8\OML/cmm/m/it/10.53937 ; \OT1/cmr/m/n/10.53937 12\OML/cmm/m/it/10.53937 ; \OT1/cmr/m/n/10.53937 16\OML/cmm/m/it/10.53937 ; \OT1/cmr/m/n/10.53937 20\OML/cmm/m/it/10.53937 mg\OT1/cmr/m/n/10.53937 /\OML/cmm/m/it/10.53937 L$\TU/lmr/m/n/10.53937 )-
  []
 
-[4] [5] [6] [7] (./Lab16.aux) ) 
+[4]
+File: fig/working.png Graphic file (type bmp)
+<fig/working.png>
+File: fig/fitting1.png Graphic file (type bmp)
+<fig/fitting1.png>
+ [5]
+File: fig/fitting2.png Graphic file (type bmp)
+<fig/fitting2.png>
+ [6] [7] [8] (./Lab16.aux) ) 
 Here is how much of TeX's memory you used:
- 32453 strings out of 492970
- 772073 string characters out of 6137298
- 914593 words of memory out of 5000000
- 36019 multiletter control sequences out of 15000+600000
+ 32463 strings out of 492970
+ 772265 string characters out of 6137298
+ 915591 words of memory out of 5000000
+ 36026 multiletter control sequences out of 15000+600000
  541145 words of font info for 89 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 62i,9n,68p,10503b,291s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,8n,68p,10503b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Lab16.pdf (7 pages).
+Output written on Lab16.pdf (8 pages).
