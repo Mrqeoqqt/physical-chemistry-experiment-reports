@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.23)  10 MAY 2019 00:28
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.23)  23 MAY 2019 13:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1467,7 +1467,7 @@ File: fig/fitting2.png Graphic file (type bmp)
 Here is how much of TeX's memory you used:
  32463 strings out of 492970
  772265 string characters out of 6137298
- 915591 words of memory out of 5000000
+ 915593 words of memory out of 5000000
  36026 multiletter control sequences out of 15000+600000
  541145 words of font info for 89 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
