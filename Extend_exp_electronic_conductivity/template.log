@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.23)  17 MAY 2019 20:04
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.23)  14 JUN 2019 00:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1323,7 +1323,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box64
 \@float@everytoks=\toks35
 \@floatcapt=\box65
-) (./template.aux)
+) (./template.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+)
 \openout1 = `template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -1448,14 +1455,31 @@ File: fig/resistivity_conductivity_definition.PNG Graphic file (type bmp)
 <fig/resistivity_conductivity_definition.PNG>
  [1
 
-] [2] [3] [4] [5] (./template.aux) ) 
+] [2] [3] [4]
+File: fig/H2O.png Graphic file (type bmp)
+<fig/H2O.png>
+ [5]
+File: fig/high.png Graphic file (type bmp)
+<fig/high.png>
+File: fig/low.png Graphic file (type bmp)
+<fig/low.png>
+ [6] [7] [8]
+Overfull \hbox (59.05536pt too wide) in paragraph at lines 322--337
+ [] 
+ []
+
+[9] (./template.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 32447 strings out of 492970
- 772203 string characters out of 6137298
- 913604 words of memory out of 5000000
- 36008 multiletter control sequences out of 15000+600000
+ 32461 strings out of 492970
+ 772372 string characters out of 6137298
+ 913649 words of memory out of 5000000
+ 36018 multiletter control sequences out of 15000+600000
  538086 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 62i,13n,68p,10511b,291s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,13n,68p,10511b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on template.pdf (5 pages).
+Output written on template.pdf (9 pages).
