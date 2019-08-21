@@ -14,6 +14,7 @@ E-reports for 'Physical Chemistry Experiment II' course of Nanjing University, w
 ## Next step:
 1. Correctify chemical formula typing.
 2. Fix some other bugs if discovered.
+3. Collect more e-reports from NJUers.
 
 ## Ackowledgements: 
 
