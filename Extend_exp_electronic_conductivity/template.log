@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.23)  14 JUN 2019 00:33
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.23)  21 AUG 2019 14:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/xym/Desktop/physical-chemistry-labs/Extend_exp_electronic_conductivity/template
-(c:/Users/xym/Desktop/physical-chemistry-labs/Extend_exp_electronic_conductivity/template.tex
+**c:/Users/xym/Desktop/temp/Extend_exp_electronic_conductivity/template
+(c:/Users/xym/Desktop/temp/Extend_exp_electronic_conductivity/template.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (c:/texlive/2018/texmf-dist/tex/latex/base/article.cls
@@ -1475,11 +1475,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  32461 strings out of 492970
- 772372 string characters out of 6137298
- 913649 words of memory out of 5000000
+ 772315 string characters out of 6137298
+ 913651 words of memory out of 5000000
  36018 multiletter control sequences out of 15000+600000
  538086 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 62i,13n,68p,10511b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,13n,68p,10492b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on template.pdf (9 pages).
